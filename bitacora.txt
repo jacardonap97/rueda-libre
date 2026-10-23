@@ -1,0 +1,21 @@
+URL: http://127.0.0.1:5500/index.html
+Protocolo: http/1.1
+Host: 127.0.0.1
+Ruta: /index.html
+Método de petición: GET
+Código de estado: 304
+
+Probando página no existente (ejemplo  /promociones.html)
+Código de estado: 404
+Significado: Not Found (el servidor recibió la petición correctamente pero no encontró el recurso solicitado.)
+
+Roles:
+
+HTML: es la estructura y contenido. Define qué hay en la página: títulos, secciones, imágenes, enlaces y formularios.
+Ejemplo: la sección de catálogo de bicicletas.
+
+CSS: estilos. Define cómo se ve la estructura: colores, tipografía, espaciado.
+Ejemplo: dar identidad visual al encabezado y al botón de compra.
+
+JavaScript: interacción y comportamiento. Define qué pasa cuando el usuario actúa: clics, formularios, animaciones.
+Ejemplo: un filtro que muestra solo bicicletas de una categoría al hacer clic.
