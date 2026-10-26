@@ -34,3 +34,86 @@ Registro de tabla de rutas usada: archivo de origen → destino → ruta escrita
 | `paginas/reservas.html` | Inicio          | `../index.html`          |
 | `paginas/reservas.html` | Tarifas y rutas | `tarifas.html`           |
 | `paginas/reservas.html` | Reservas        | `reservas.html`          |
+
+
+
+==============================
+Esquema de Regiones por Página
+==============================
+
+Inicio (index.html)
+┌────────────────────────────────────────────────────────┐
+│ <header> ENCABEZADO: Logo + "Rueda Libre"              │
+├────────────────────────────────────────────────────────┤
+│ <nav> NAVEGACIÓN: [Inicio] [Tarifas y rutas] [Reservas]│
+├────────────────────────────────────────────────────────┤
+│ <main> CONTENIDO PRINCIPAL                             │
+│   │                                                    │
+│   ├── <h1> Título: ¡Bienvenido a Rueda Libre!          │
+│   │                                                    │
+│   ├── <section> SECCIÓN: ¿Quiénes somos?               │
+│   │     └── <p> Texto descriptivo del emprendimiento   │
+│   │                                                    │
+│   ├── <section> SECCIÓN: Nuestros servicios            │
+│   │     ├── <article> ARTÍCULO: Alquiler por día       │
+│   │     ├── <article> ARTÍCULO: Alquiler por semana    │
+│   │     └── <article> ARTÍCULO: Recorridos guiados     │
+│   │                                                    │
+│   ├── <section> SECCIÓN: ¿Cómo alquilar?               │
+│   │     └── <ol> Lista ordenada de pasos (1 al 4)      │
+│   │                                                    │
+│   └── <aside> CONTENIDO COMPLEMENTARIO: Beneficios     │
+│         └── <ul> Lista de ventajas (Seguro, asistencia)│
+│                                                        │
+├────────────────────────────────────────────────────────┤
+│ <footer> PIE DE PÁGINA: Contacto + Copyright           │
+└────────────────────────────────────────────────────────┘
+
+
+
+Tarifas y rutas (tarifas.html)
+┌────────────────────────────────────────────────────────┐
+│ <header> ENCABEZADO: Logo + "Rueda Libre - Tarifas"    │
+├────────────────────────────────────────────────────────┤
+│ <nav> NAVEGACIÓN: [Inicio] [Tarifas y rutas] [Reservas]│
+├────────────────────────────────────────────────────────┤
+│ <main> CONTENIDO PRINCIPAL                             │
+│   │                                                    │
+│   ├── <h1> Título: Tarifas                             │
+│   │                                                    │
+│   ├── <section> SECCIÓN: Tipos de Bicicleta            │
+│   │     └── <table> Tabla de precios (Urbana/Eléctrica)│
+│   │                                                    │
+│   ├── <section> SECCIÓN: Recorridos Guiados            │
+│   │     └── <table> Tabla de rutas (Distancia/Precio)  │
+│   │                                                    │
+│   └── <aside> CONTENIDO COMPLEMENTARIO: Info Importante│
+│         ├── <p> Recordatorio de casco y candado        │
+│         └── <ul> Lista de elementos a llevar           │
+│                                                        │
+├────────────────────────────────────────────────────────┤
+│ <footer> PIE DE PÁGINA: Contacto + Copyright           │
+└────────────────────────────────────────────────────────┘
+
+
+Reservas (reservas.html)
+┌────────────────────────────────────────────────────────┐
+│ <header> ENCABEZADO: Logo + "Rueda Libre"              │
+├────────────────────────────────────────────────────────┤
+│ <nav> NAVEGACIÓN: [Inicio] [Tarifas y rutas] [Reservas]│
+├────────────────────────────────────────────────────────┤
+│ <main> CONTENIDO PRINCIPAL                             │
+│   │                                                    │
+│   ├── <h1> Título: Reserva tu bicicleta                │
+│   │                                                    │
+│   └── <section> SECCIÓN: Horarios y Contacto           │
+│         ├── <p> Correo electrónico de reservas         │
+│         ├── <p> Horario de Lunes a Viernes             │
+│         └── <p> Horario de Sábados, Domingos y Festivos│
+│                                                        │
+├────────────────────────────────────────────────────────┤
+│ <footer> PIE DE PÁGINA: Contacto + Copyright           │
+└────────────────────────────────────────────────────────┘
+
+
+
