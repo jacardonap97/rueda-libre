@@ -19,3 +19,18 @@ Ejemplo: dar identidad visual al encabezado y al botón de compra.
 
 JavaScript: interacción y comportamiento. Define qué pasa cuando el usuario actúa: clics, formularios, animaciones.
 Ejemplo: un filtro que muestra solo bicicletas de una categoría al hacer clic.
+
+
+Registro de tabla de rutas usada: archivo de origen → destino → ruta escrita.
+
+|          Origen         |     Destino     | Ruta escrita en el HTML  |
+|-------------------------|-----------------|--------------------------|
+| `index.html`            | Inicio          | `index.html`             |
+| `index.html`            | Tarifas y rutas | `./paginas/tarifas.html` |
+| `index.html`            | Reservas        | `./paginas/reservas.html`|
+| `paginas/tarifas.html`  | Inicio          | `../index.html`          |
+| `paginas/tarifas.html`  | Tarifas y rutas | `tarifas.html`           |
+| `paginas/tarifas.html`  | Reservas        | `reservas.html`          |
+| `paginas/reservas.html` | Inicio          | `../index.html`          |
+| `paginas/reservas.html` | Tarifas y rutas | `tarifas.html`           |
+| `paginas/reservas.html` | Reservas        | `reservas.html`          |
