@@ -117,3 +117,16 @@ Reservas (reservas.html)
 
 
 
+
+========================================================================
+Justificación de 3 elecciones de tipo de campos en formulario de reserva
+========================================================================
+
+1- Para el campo de "Nombre completo" se uso type text, ya que el usuario debe digitar texto de forma libre.
+
+2- Para el campo de "Plan" se uso type radio, con la finalidad de que el usuario solo pueda elegir una opción 
+de forma mutuamente excluyente.
+
+3- Para el campo de "Tipo de recorrido" se uso una lista de selección (select), con el fin de mostrar varias 
+opciones y no ocupar mucho espacio ya que tenian un texto considerable.
+
