@@ -30,19 +30,21 @@
                     <legend><strong>Tus datos</strong></legend>
                     <p>
                         <label for="nombre">Nombre completo</label>
-                        <input type="text" id="nombre" name="nombre">
+                        <input type="text" id="nombre" name="nombre" required minlength="3" title="Escriba su nombre completo">
                     </p>
                     <p>
                         <label for="documento">Número de documento</label>
-                        <input type="number" id="documento" name="documento">
+                        <!--Aunque sea un número es mejor tratarlo como type text si no se va a operar-->
+                        <input type="text" id="documento" name="documento" required pattern="[0-9]{6,10}" title="Entre 6 y 10 números">
                     </p>
                     <p>
                         <label for="correo">Correo electrónico</label>
-                        <input type="email" id="correo" name="correo">
+                        <input type="email" id="correo" name="correo" required title="Escriba su correo">
                     </p>
                     <p>
                         <label for="celular">Número de celular</label>
-                        <input type="tel" id="celular" name="celular">
+                        <!--Aunque sea un número es mejor tratarlo como type text si no se va a operar-->
+                        <input type="text" id="celular" name="celular" required pattern="[3][0-9]{9}" title="Debe tener 10 dígitos y debe empezar por 3">
                     </p>
                 </fieldset>
 
@@ -50,11 +52,11 @@
                     <legend><strong>Tu alquiler</strong></legend>
                     <p>
                         <label for="fecha">Fecha de alquiler</label>
-                        <input type="date" id="fecha" name="fecha">
+                        <input type="date" id="fecha" name="fecha" required min="2026-11-01" max="2026-12-31">
                     </p>
                     <p>
                         <label for="tipo-bici">Tipo de bicicleta</label>
-                        <select name="tipo-bici" id="tipo-bici">
+                        <select name="tipo-bici" id="tipo-bici" required title="Seleccione un tipo de bici">
                             <option value="">Selecciona una opción</option>
                             <option value="urbana">Urbana</option>
                             <option value="montana">Montaña</option>
@@ -64,7 +66,7 @@
                     <p>
                         Plan <br>
                         <label for="una-hora">
-                            <input type="radio" name="plan" id="una-hora">
+                            <input type="radio" name="plan" id="una-hora" required>
                             1 hora
                         </label>
 
@@ -80,11 +82,11 @@
                     </p>
                     <p>
                         <label for="cantidad-bici">Cantidad de bicicletas</label>
-                        <input type="number" id="cantidad-bici" name="cantidad-bici">
+                        <input type="number" id="cantidad-bici" name="cantidad-bici" required min="1" max="6" step="1" value="0" title="Elija entre mínimo 1 y máximo 6 bicis">
                     </p>
                     <p>
                         <label for="recorrido">Tipo de recorrido</label>
-                        <select name="recorrido" id="recorrido">
+                        <select name="recorrido" id="recorrido" required title="Elija una opción">
                             <option value="">Selecciona una opción</option>
                             <option value="rio-y-parques">Río y parques</option>
                             <option value="sabores-de-barrio">Sabores de barrio</option>
@@ -94,7 +96,7 @@
                     </p>
                     <p>
                         <label for="comentarios">Dejanos tus comentarios</label>
-                        <input type="text" name="comentarios" id="comentarios">
+                        <input type="text" name="comentarios" id="comentarios" maxlength="300" title="Si gustas, deja tu comentario">
                     </p>
                 </fieldset>
 
@@ -107,11 +109,11 @@
                         tiempo de uso.
                         <br>
                         <label for="si">
-                            <input type="radio" name="si" id="si">
+                            <input type="radio" name="confirmacion" id="si" required>
                             Sí
                         </label>
                         <label for="no">
-                            <input type="radio" name="no" id="no">
+                            <input type="radio" name="confirmacion" id="no">
                             No
                         </label>
                         <br>
