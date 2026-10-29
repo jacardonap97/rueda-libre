@@ -130,3 +130,35 @@ de forma mutuamente excluyente.
 3- Para el campo de "Tipo de recorrido" se uso una lista de selección (select), con el fin de mostrar varias 
 opciones y no ocupar mucho espacio ya que tenian un texto considerable.
 
+
+========================================
+Tabla de pruebas de campos de formulario
+========================================
+
+_______________________________________________________________________________________________________________
+|        Campo         |        Dato de prueba     |     Resultado esperado     |     Resultado optenido      |
+---------------------------------------------------------------------------------------------------------------
+|Número de documento   | 15156                     |Digite entre 6 y 10 numeros | Digite entre 6 y 10 numeros |
+---------------------------------------------------------------------------------------------------------------
+|Correo electrónico    |correo.com                 |Incluya @ en el campo       |Incluya @ en el campo        |
+---------------------------------------------------------------------------------------------------------------
+|Número de celular     |12516978                   |Debe tener 10 dígitos y     |Debe tener 10 dígitos y      |
+|                      |                           |empezar por 10              |empezar por 10               |
+---------------------------------------------------------------------------------------------------------------
+|Tipo de bicicleta     |Selecciona una opción      |Por favor selecciona un     |Por favor selecciona un      |
+|                      |                           |item de la lista            |item de la lista             |
+---------------------------------------------------------------------------------------------------------------
+|Plan                  |Sin escoger opción         |Por favor seleccione una    |Por favor seleccione una     |
+|                      |                           |opción                      |opción                       |
+---------------------------------------------------------------------------------------------------------------
+|Cantidad de bicicletas|0                          |Elija un valor mayor o igual|Elija un valor mayor o igual |
+|                      |                           |a 1                         |a 1                          |
+---------------------------------------------------------------------------------------------------------------
+|Tipo de recorrido     |Selecciona una opción      |Selecciona un item de la    |Selecciona un item de la     |
+|                      |                           |lista                       |lista                        |
+---------------------------------------------------------------------------------------------------------------
+|Confirmación del      |Sin escoger opción         |Seleccione una de las       |Seleccione una de las        |
+|acuerdo               |                           |opciones                    |opciones                     |
+---------------------------------------------------------------------------------------------------------------
+|                      |                           |                            |                             |
+---------------------------------------------------------------------------------------------------------------
