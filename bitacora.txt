@@ -162,3 +162,66 @@ ________________________________________________________________________________
 ---------------------------------------------------------------------------------------------------------------
 |                      |                           |                            |                             |
 ---------------------------------------------------------------------------------------------------------------
+
+
+========================================
+Revisión de correcciones
+========================================
+Se reviso la página en busca de posibles correcciones y no se encontrarón algunas evidentes.
+
+
+
+=================================================
+Verificación de contraste con colores del cliente
+=================================================
+
+Color         | Código    | Uso que propone el cliente
+-------------------------------------------------------------
+Verde Ruta    | #1E7A4F | Botones y enlaces
+-------------------------------------------------------------
+Naranja Pedal | #F39A2B | Destacados y botones secundarios
+-------------------------------------------------------------
+Azul Noche    | #14213D | Títulos y encabezado
+-------------------------------------------------------------
+Crema         | #FAF6EF | Fondo general
+-------------------------------------------------------------
+Gris Asfalto  | #5B6470 | Texto secundario
+
+
+*Texto blanco sobre Verde Ruta:     Apta solo para texto grande
+*Blanco sobre Naranja Pedal:        No apta
+*Azul Noche sobre Naranja Pedal:    Apta para texto normal y apta para texto grande
+*Azul Noche sobre Crema:            Apta para texto normal y apta para texto grande
+*Gris Asfalto sobre Crema:          Apta solo para texto grande
+*Verde Ruta sobre Crema:            Apta solo para texto grande
+*Naranja Pedal sobre Crema:         No apta
+*Blanco sobre Azul Noche:           Apta para texto normal y apta para texto grande
+
+
+
+=====================
+Mapa de uso de color
+=====================
+
+Elemento               | Color de texto         | Color de fondo
+--------------------------------------------------------------------------
+Fondo general          | -----------------------| Crema #FAF6EF
+--------------------------------------------------------------------------
+Títulos y encabezados  | Azul Noche #14213D   | Crema #FAF6EF
+--------------------------------------------------------------------------
+Texto de cuerpo        | Azul Noche #14213D   | Crema #FAF6EF
+--------------------------------------------------------------------------
+Texto secundario       | Gris Asfalto #5B6470 | Crema #FAF6EF
+--------------------------------------------------------------------------
+Botones primarios      | Blanco #FFFFFF       | Verde Ruta #1E7A4F
+--------------------------------------------------------------------------
+Botones secundarios    | Azul Noche #14213D   | Naranja Pedal #F39A2B
+--------------------------------------------------------------------------
+Enlaces                | Azul Noche #14213D   | Crema #FAF6EF
+
+
+
+
+
+
+Link de la página: https://jacardonap97.github.io/rueda-libre/index.html
