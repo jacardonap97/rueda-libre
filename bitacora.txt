@@ -234,3 +234,35 @@ Propieades heredadas y no heredadas
 
 Se analizo un párrafo y se pudo observar que desde el body se hereda el tipo de fuente
 y su grosor. Y no se hereda el color de fondo de la página.
+
+
+La clase "activo" no se aplica, porque existe una regla mas especifica que 
+involucra a un ID, por ende se le da prioridad al ID. 
+
+Clase activo
+
+.activo {
+    color: var(--verde-ruta); 
+    font-weight: 600; 
+}
+
+ID 
+
+#menu a { 
+    color: var(--gris-asfalto); 
+}
+
+Como se observa, el ID = "menu" además de ser un ID, tiene mayor especificidad que
+la class = "activo"
+
+Selector        | Especificidad | 
+----------------|---------------|
+#menu a         | (1,0,1)       |
+.activo         | (0,1,0)       |
+
+A esto se le dio solución dandole más especificidad a la regla de "activo" de esta forma:
+
+#menu a.activo {
+    color: var(--verde-ruta); 
+    font-weight: 600; 
+}

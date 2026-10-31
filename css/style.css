@@ -6,9 +6,9 @@
     --gris-asfalto: #5B6470;
     --fuente-montserrat: "Montserrat", Arial, sans-serif;
     --fuente-open-sans: "Open Sans", Arial, sans-serif;
-    --espacio1: 1rem;
-    --espacio2: 2rem;
-    --espacio3: 3rem;
+    --espacio1: 0.5rem;
+    --espacio2: 1rem;
+    --espacio3: 2rem;
 }
 
 body{
@@ -22,3 +22,88 @@ h1, h2, h3, h4{
     font-family: var(--fuente-montserrat);
     font-weight: 700;
 }
+
+#menu a { 
+    color: var(--gris-asfalto);
+    text-decoration: none;
+    padding: var(--espacio1) var(--espacio2);
+    border-radius: 4px;
+    transition: color 0.2s, background-color 0.2s;
+}
+
+#menu a:hover{
+    color: var(--verde-ruta);
+    background-color: #1E7A4F10;
+}
+
+#menu a:focus{
+    color: var(--verde-ruta);
+    background-color: #1E7A4F10;
+    outline: 2px solid var(--verde-ruta);
+    outline-offset: 2px;
+}
+
+#menu a.activo {
+    color: var(--verde-ruta); 
+    font-weight: 600; 
+}
+
+.btn-reserva {
+    margin-top: 8px;
+    display: inline-block;
+    background-color: var(--verde-ruta);
+    color: var(--crema);
+    padding: var(--espacio1) var(--espacio2);
+    border-radius: 6px;
+    text-decoration: none;
+    font-weight: 600;
+    transition: background-color 0.2s, transform 0.1s;
+}
+
+.btn-reserva:hover {
+    background-color: #155d3b;
+}
+
+.btn-reserva:focus {
+    outline: 2px solid var(--verde-ruta);
+    outline-offset: 2px;
+    background-color: #155d3b;
+}
+
+.btn-reserva:active {
+    transform: scale(0.97);
+    background-color: #0f4a2f;
+}
+
+#formulario-reserva input:focus {
+    outline: none;
+    border-color: var(--verde-ruta);
+    box-shadow: 0 0 0 3px #1E7A4F30;
+}
+
+#formulario-reserva select:focus {
+    outline: none;
+    border-color: var(--verde-ruta);
+    box-shadow: 0 0 0 3px #1E7A4F30;
+}
+
+#formulario-reserva fieldset{
+    border: 2px solid var(--verde-ruta);
+    border-radius: 8px;
+    padding: var(--espacio2);
+    margin-bottom: var(--espacio2);
+    background-color: #ffffff;
+    box-shadow: 0 2px 8px #00000010; 
+}
+
+#formulario-reserva legend {
+    font-family: var(--fuente-montserrat);
+    font-weight: 700;
+    color: var(--verde-ruta);
+    padding: 0 var(--espacio1);
+}
+
+/* De esta forma se cambia el color de los botones de radio */
+#formulario-reserva input[type="radio"] {
+    accent-color: var(--verde-ruta);
+}   
