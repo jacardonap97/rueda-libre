@@ -266,3 +266,14 @@ A esto se le dio solución dandole más especificidad a la regla de "activo" de 
     color: var(--verde-ruta); 
     font-weight: 600; 
 }
+
+
+=====================================
+Medición mediante DevTools (Computed)
+=====================================
+
+Se midio el ancho total de una tarjeta antes y después de cambiar box-sizing.
+
+Conclusiones:
+Con box-sizing activo: 960px
+Sin box-sizing activo: 893.016px

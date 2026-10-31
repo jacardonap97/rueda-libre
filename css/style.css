@@ -1,3 +1,9 @@
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}   
+
 :root{
     --verde-ruta: #1E7A4F;
     --naranja-pedal: #F39A2B;
@@ -18,9 +24,50 @@ body{
     color: var(--azul-noche);
 }
 
+main {
+    max-width: 60rem;
+    margin-left: auto;
+    margin-right: auto;
+}
+
 h1, h2, h3, h4{
     font-family: var(--fuente-montserrat);
     font-weight: 700;
+}
+
+.portada {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: var(--espacio2);
+}
+
+.portada img {
+    width: 950px;
+}
+
+.portada h1 {
+    font-size: 3rem;
+}
+
+.servicio {
+    padding: var(--espacio3);
+    border: 1px solid var(--gris-asfalto);
+    border-radius: 8px;
+    margin-bottom: var(--espacio2);
+    background-color: #ffffff;
+}
+
+.servicio img {
+    width: 100%;
+    border-radius: 6px;
+}
+
+#menu {
+    display: flex;
+    gap: var(--espacio2);
 }
 
 #menu a { 
@@ -87,11 +134,18 @@ h1, h2, h3, h4{
     box-shadow: 0 0 0 3px #1E7A4F30;
 }
 
+#formulario-reserva input,
+#formulario-reserva select {
+    width: 100%;
+    padding: var(--espacio1) var(--espacio2);
+    margin-bottom: var(--espacio2);
+}
+
 #formulario-reserva fieldset{
     border: 2px solid var(--verde-ruta);
     border-radius: 8px;
     padding: var(--espacio2);
-    margin-bottom: var(--espacio2);
+    margin-bottom: var(--espacio3);
     background-color: #ffffff;
     box-shadow: 0 2px 8px #00000010; 
 }
@@ -99,11 +153,100 @@ h1, h2, h3, h4{
 #formulario-reserva legend {
     font-family: var(--fuente-montserrat);
     font-weight: 700;
+    font-size: 1.3rem;
     color: var(--verde-ruta);
     padding: 0 var(--espacio1);
+}
+
+#formulario-reserva label {
+    display: block;
+    margin-bottom: var(--espacio1);
+    font-size: 1.2rem;
+}
+
+.grupo-titulo-radio {
+    display: block;
+    font-size: 1.2rem;
+    color: var(--azul-noche);
+    margin-bottom: var(--espacio1);
 }
 
 /* De esta forma se cambia el color de los botones de radio */
 #formulario-reserva input[type="radio"] {
     accent-color: var(--verde-ruta);
+    width: auto;
 }   
+
+#formulario-reserva label:has(input[type="radio"]) {
+    display: inline;
+    margin-bottom: 0;
+    margin-right: var(--espacio2);
+}
+
+#formulario-reserva button {
+    padding: var(--espacio2) var(--espacio3);
+    background-color: var(--verde-ruta);
+    color: var(--crema);
+    border: none;
+    border-radius: 6px;
+    font-family: var(--fuente-montserrat);
+    font-weight: 700;
+    font-size: var(--espacio2);
+    cursor: pointer;
+    transition: background-color 0.2s;
+}
+
+#formulario-reserva button:hover {
+    background-color: #155d3b;
+}
+
+#formulario-reserva button:focus {
+    outline: 2px solid var(--verde-ruta);
+    outline-offset: 2px;
+}
+
+#tarifas table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-bottom: var(--espacio3);
+}
+
+#recorridos table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-bottom: var(--espacio3);
+}
+
+#tarifas th {
+    background-color: var(--verde-ruta);
+    color: var(--crema);
+    padding: var(--espacio1) var(--espacio2);
+    text-align: left;
+}
+
+#recorridos th {
+    background-color: var(--verde-ruta);
+    color: var(--crema);
+    padding: var(--espacio1) var(--espacio2);
+    text-align: left;
+}
+
+#tarifas td {
+    padding: var(--espacio1) var(--espacio2);
+    border-bottom: 1px solid var(--gris-asfalto);
+}
+
+#recorridos td {
+    padding: var(--espacio1) var(--espacio2);
+    border-bottom: 1px solid var(--gris-asfalto);
+}
+
+/* De esta forma se aplica para las dos tablas sin tener que repetir lo mismo */
+#tarifas caption,
+#recorridos caption {
+    font-family: var(--fuente-montserrat);
+    font-weight: 700;
+    font-size: 1.5rem;
+    padding: var(--espacio2);
+    caption-side: top;
+}
