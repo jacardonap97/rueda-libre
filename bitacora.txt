@@ -225,3 +225,12 @@ Enlaces                | Azul Noche #14213D   | Crema #FAF6EF
 
 
 Link de la página: https://jacardonap97.github.io/rueda-libre/index.html
+
+
+
+===================================
+Propieades heredadas y no heredadas
+===================================
+
+Se analizo un párrafo y se pudo observar que desde el body se hereda el tipo de fuente
+y su grosor. Y no se hereda el color de fondo de la página.

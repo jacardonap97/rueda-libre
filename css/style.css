@@ -1,0 +1,24 @@
+:root{
+    --verde-ruta: #1E7A4F;
+    --naranja-pedal: #F39A2B;
+    --azul-noche: #14213D;
+    --crema: #FAF6EF;
+    --gris-asfalto: #5B6470;
+    --fuente-montserrat: "Montserrat", Arial, sans-serif;
+    --fuente-open-sans: "Open Sans", Arial, sans-serif;
+    --espacio1: 1rem;
+    --espacio2: 2rem;
+    --espacio3: 3rem;
+}
+
+body{
+    font-family: var(--fuente-open-sans);
+    font-weight: 450;
+    background-color: var(--crema);
+    color: var(--azul-noche);
+}
+
+h1, h2, h3, h4{
+    font-family: var(--fuente-montserrat);
+    font-weight: 700;
+}

@@ -5,6 +5,15 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Reservas</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <!-- Montserrat -->
+    <link href="https://fonts.googleapis.com/css2?family=Jersey+10&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <!-- Open Sans -->
+    <link href="https://fonts.googleapis.com/css2?family=Jersey+10&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="../css/style.css">
 </head>
 
 <body>
@@ -30,12 +39,14 @@
                     <legend><strong>Tus datos</strong></legend>
                     <p>
                         <label for="nombre">Nombre completo</label>
-                        <input type="text" id="nombre" name="nombre" required minlength="3" title="Escriba su nombre completo">
+                        <input type="text" id="nombre" name="nombre" required minlength="3"
+                            title="Escriba su nombre completo">
                     </p>
                     <p>
                         <label for="documento">Número de documento</label>
                         <!--Aunque sea un número es mejor tratarlo como type text si no se va a operar-->
-                        <input type="text" id="documento" name="documento" required pattern="[0-9]{6,10}" title="Entre 6 y 10 números">
+                        <input type="text" id="documento" name="documento" required pattern="[0-9]{6,10}"
+                            title="Entre 6 y 10 números">
                     </p>
                     <p>
                         <label for="correo">Correo electrónico</label>
@@ -44,7 +55,8 @@
                     <p>
                         <label for="celular">Número de celular</label>
                         <!--Aunque sea un número es mejor tratarlo como type text si no se va a operar-->
-                        <input type="text" id="celular" name="celular" required pattern="[3][0-9]{9}" title="Debe tener 10 dígitos y debe empezar por 3">
+                        <input type="text" id="celular" name="celular" required pattern="[3][0-9]{9}"
+                            title="Debe tener 10 dígitos y debe empezar por 3">
                     </p>
                 </fieldset>
 
@@ -82,7 +94,8 @@
                     </p>
                     <p>
                         <label for="cantidad-bici">Cantidad de bicicletas</label>
-                        <input type="number" id="cantidad-bici" name="cantidad-bici" required min="1" max="6" step="1" value="0" title="Elija entre mínimo 1 y máximo 6 bicis">
+                        <input type="number" id="cantidad-bici" name="cantidad-bici" required min="1" max="6" step="1"
+                            value="0" title="Elija entre mínimo 1 y máximo 6 bicis">
                     </p>
                     <p>
                         <label for="recorrido">Tipo de recorrido</label>
@@ -96,7 +109,8 @@
                     </p>
                     <p>
                         <label for="comentarios">Dejanos tus comentarios</label>
-                        <input type="text" name="comentarios" id="comentarios" maxlength="300" title="Si gustas, deja tu comentario">
+                        <input type="text" name="comentarios" id="comentarios" maxlength="300"
+                            title="Si gustas, deja tu comentario">
                     </p>
                 </fieldset>
 
