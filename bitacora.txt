@@ -368,3 +368,28 @@ Tres bloques en fila, alineados por arriba. No se necesita controlar filas y col
 
 Uso Grid cuando necesito controlar filas Y columnas o proporciones fijas (fr).
 Flexbox es más util cuando solo necesito alinear elementos en una dirección (fila o columna).
+
+
+
+=================
+Ajuste de errores
+=================
+
+360 px
+La tabla de tarifas se desborda: el encabezado "Medio día (4h)" no cabe y obliga a scroll horizontal.
+
+PAra intentar solucionarlo cambié el texto del <th> a "Medio día" sin "(4h)" y agregué word-wrap: break-word en los th y td para 
+que las palabras largas se rompan en vez de forzar el ancho.
+
+
+360 px
+El botón de WhatsApp tapa el último párrafo del footer al llegar al final de la página.
+
+Lo solucione aumentando el padding-bottom en el body de 80px a 90px y reduje el tamaño del botón: padding: 10px 16px y font-size: 0.85rem.
+
+
+768 px
+Cuando se activa .portada-top en row, el título "Rueda Libre - Tarifas" y los 3 enlaces del menú quedan muy pegados, sin espacio entre ellos.
+
+Entonces agregué flex-wrap: wrap y gap: var(--espacio2) en .portada-top dentro de la media query de 768px, para que si no caben, el menú baje 
+a la siguiente línea con separación.
