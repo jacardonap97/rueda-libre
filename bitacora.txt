@@ -411,3 +411,18 @@ reset y tipografía base.
 Control que perdí:
 Breakpoints fijos de Bootstrap (no puedo usar 768/1200 exactos).
 No aplica mi paleta de marca sin sobrescribir.
+
+
+=====================================
+Cinco clases de Bootstrap consultadas
+=====================================
+
+1. text-center: centra el texto horizontalmente.
+
+2. fw-bold: aplica negrita al texto.
+
+3. bg-light: establece un color de fondo claro.
+
+4. d-flex: activa el sistema Flexbox para organizar elementos.
+
+5. flex-md-row: organiza los elementos en fila desde pantallas medianas (md).
