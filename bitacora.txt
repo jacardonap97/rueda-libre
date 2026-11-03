@@ -311,3 +311,15 @@ Encabezado: Al estrechar la ventana, el título y el menú se mantienen en la mi
 Cuando el espacio no alcanza, los enlaces del menú pasan a una segunda línea (flex-wrap: wrap).
 
 Pie de página: Los tres bloques (marca, contacto, horario) se quedan en fila y se van apretando entre sí.
+
+=========================================
+Número de columnas por tamaño de pantalla
+=========================================
+
+con la regla
+grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+
+se pude apreciar que :
+1280px = 3 columnas
+900px =  3 columnas
+500px = 1 columna
