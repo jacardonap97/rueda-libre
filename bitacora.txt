@@ -299,3 +299,15 @@ Día 3:
 2. Menú activo, hover y foco visibles.
 3. Espaciado, max-width en texto, organización en tablas y formulario.
 4. Etiqueta "Nuevo", botón WhatsApp fijo, revisión final de calidad.
+
+
+
+
+============================
+Mejoras para la versión 1.5v
+============================
+
+Encabezado: Al estrechar la ventana, el título y el menú se mantienen en la misma fila (debido a space-between). 
+Cuando el espacio no alcanza, los enlaces del menú pasan a una segunda línea (flex-wrap: wrap).
+
+Pie de página: Los tres bloques (marca, contacto, horario) se quedan en fila y se van apretando entre sí.

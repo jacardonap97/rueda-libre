@@ -45,7 +45,7 @@ h1, h2, h3, h4{
 }
 
 /* ============================================
-    3. HEADER/PORTADA
+    3. HEADER / PORTADA
    ============================================ */
 
 .portada {
@@ -55,14 +55,30 @@ h1, h2, h3, h4{
     align-items: center;
     justify-content: center;
     gap: var(--espacio2);
+    padding: var(--espacio2);
+}
+
+.portada-top {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    max-width: 60rem;
 }
 
 .portada img {
-    width: 950px;
+    width: 100%;
+    max-width: 950px;
+    height: auto;
 }
 
 .portada h1 {
     font-size: 3rem;
+}
+
+.logo {
+    max-width: 100px;
+    height: auto;
 }
 
 /* ============================================
@@ -72,6 +88,7 @@ h1, h2, h3, h4{
 
 #menu {
     display: flex;
+    flex-wrap: wrap;
     gap: var(--espacio2);
 }
 
@@ -180,14 +197,14 @@ h1, h2, h3, h4{
     padding: 12px 20px;
     border-radius: 50px;
     text-decoration: none;
-    box-shadow: 0 4px 12px #000025;
+    box-shadow: 0 4px 12px #00000040;
     z-index: 9999;
-    transform: transform 0.2s, box-shadow 0.2s;
+    transition: transform 0.2s, box-shadow 0.2s;
 }
 
 .btn-whatsapp:hover {
     transform: scale(1.05);
-    box-shadow: 0 6px 16px #000003; 
+    box-shadow: 0 6px 16px #0000004D; 
 }
 
 .btn-whatsapp:focus-visible {
@@ -330,4 +347,18 @@ h1, h2, h3, h4{
     font-size: 1.5rem;
     padding: var(--espacio2);
     caption-side: top;
+}
+
+/* ============================================
+    10. PIE DE PÁGINA
+   ============================================ */
+
+#pie-de-pagina {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    gap: var(--espacio3);
+    max-width: 60rem;
+    margin: 0 auto;
+    padding: var(--espacio3) var(--espacio2);
 }
