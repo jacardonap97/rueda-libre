@@ -323,3 +323,48 @@ se pude apreciar que :
 1280px = 3 columnas
 900px =  3 columnas
 500px = 1 columna
+
+
+=========================
+Decidir si Grid o Flexbox
+=========================
+
+*Portada (inicio):
+Grid (1fr 1fr)
+
+Permite dos columnas de igual ancho con alineación vertical independiente. Con Grid se resuelve en una línea; con Flexbox tendría 
+que pelear con align-items y flex: 1.
+
+
+*Galería de rutas
+Grid (repeat(3, 1fr))
+
+Siempre 3 tarjetas en una fila. Grid define las columnas directamente; no necesito que se adapte a la cantidad.
+
+
+*Reservas (layout 2:1)
+Grid (2fr 1fr)
+
+Proporción fija entre formulario y aside. Grid con fr es lo más directo para 2:1.
+
+
+*Fila del formulario (documento + celular)
+Flexbox (flex: 1 en cada campo)
+
+Dos elementos en una fila. No necesito controlar filas Y columnas, solo repartir el ancho horizontal. Flexbox es más fácil en este caso.
+
+
+*Encabezado (portada-top)
+Flexbox (space-between)
+
+Me permite colocar un elemento a la izquierda y otro a la derecha en una sola línea.
+
+
+*Pie de página
+Flexbox (space-between + align-items: flex-start)
+
+Tres bloques en fila, alineados por arriba. No se necesita controlar filas y columnas a la vez.
+
+
+Uso Grid cuando necesito controlar filas Y columnas o proporciones fijas (fr).
+Flexbox es más util cuando solo necesito alinear elementos en una dirección (fila o columna).

@@ -32,16 +32,10 @@
             </nav>
         </div>
 
-        <img src="../img/logo-verde-ruta.png" alt="Logo página" class="logo">
+        <img src="../img/logo-verde-ruta.png" alt="Logo página">
     </header>
 
-    <main>
-        <section id="contacto-reserva">
-            <p>
-                Correo: <a href="mailto:correo@ruedalibre.example">correo@ruedalibre.example</a>
-            </p>
-        </section>
-
+    <main id="main-reservas">
         <section id="formulario-reserva">
             <h2>Formulario de reserva</h2>
             <form action="#" method="post">
@@ -52,21 +46,26 @@
                         <input type="text" id="nombre" name="nombre" required minlength="3"
                             title="Escriba su nombre completo">
                     </p>
-                    <p>
-                        <label for="documento">Número de documento</label>
-                        <!--Aunque sea un número es mejor tratarlo como type text si no se va a operar-->
-                        <input type="text" id="documento" name="documento" required pattern="[0-9]{6,10}"
-                            title="Entre 6 y 10 números">
-                    </p>
+
+                    <div class="fila-dos">
+                        <p>
+                            <label for="documento">Número de documento</label>
+                            <!--Aunque sea un número es mejor tratarlo como type text si no se va a operar-->
+                            <input type="text" id="documento" name="documento" required pattern="[0-9]{6,10}"
+                                title="Entre 6 y 10 números">
+                        </p>
+
+                        <p>
+                            <label for="celular">Número de celular</label>
+                            <!--Aunque sea un número es mejor tratarlo como type text si no se va a operar-->
+                            <input type="text" id="celular" name="celular" required pattern="[3][0-9]{9}"
+                                title="Debe tener 10 dígitos y debe empezar por 3">
+                        </p>
+                    </div>
+
                     <p>
                         <label for="correo">Correo electrónico</label>
                         <input type="email" id="correo" name="correo" required title="Escriba su correo">
-                    </p>
-                    <p>
-                        <label for="celular">Número de celular</label>
-                        <!--Aunque sea un número es mejor tratarlo como type text si no se va a operar-->
-                        <input type="text" id="celular" name="celular" required pattern="[3][0-9]{9}"
-                            title="Debe tener 10 dígitos y debe empezar por 3">
                     </p>
                 </fieldset>
 
@@ -149,7 +148,12 @@
         </section>
 
         <!--Lista de definiciones-->
-        <aside>
+        <aside id="info-reserva">
+            <h2>Información</h2>
+            <p>
+                Correo: <a href="mailto:correo@ruedalibre.example">correo@ruedalibre.example</a>
+            </p>
+
             <dl>
                 <h3>Horarios</h3>
                 <dt><strong>Lunes a viernes:</strong></dt>

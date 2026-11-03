@@ -58,6 +58,23 @@ h1, h2, h3, h4{
     padding: var(--espacio2);
 }
 
+.portada-inicio {
+    min-height: 100vh;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    align-items: center;
+    gap: var(--espacio3);
+    padding: var(--espacio2);
+    max-width: 60rem;
+    margin: 0 auto;
+}
+
+.portada-texto {
+    display: flex;
+    flex-direction: column;
+    gap: var(--espacio2);
+}
+
 .portada-top {
     display: flex;
     align-items: center;
@@ -68,7 +85,7 @@ h1, h2, h3, h4{
 
 .portada img {
     width: 100%;
-    max-width: 950px;
+    max-width: 550px;
     height: auto;
 }
 
@@ -76,9 +93,14 @@ h1, h2, h3, h4{
     font-size: 3rem;
 }
 
-.logo {
-    max-width: 100px;
+.portada-inicio h1 {
+    font-size: 3rem;
+}
+
+.portada-foto {
+    width: 100%;
     height: auto;
+    border-radius: 8px;
 }
 
 /* ============================================
@@ -299,6 +321,16 @@ h1, h2, h3, h4{
     outline-offset: 2px;
 }
 
+.fila-dos {
+    display: flex;
+    gap: var(--espacio2);
+}
+
+.fila-dos p {
+    flex: 1; /* Indica que ocupe la mitad del ancho disponible */
+    margin-bottom: 0;
+}
+
 /* ============================================
     9. TABLAS
    ============================================ */
@@ -401,4 +433,55 @@ h1, h2, h3, h4{
 .flota-item .btn-reserva {
     margin-top: auto;
     text-align: center;
+}
+
+/* ============================================
+    12. RUTAS
+   ============================================ */
+
+#rutas {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: var(--espacio3);
+    margin-top: var(--espacio3);
+}
+
+#rutas h2 {
+    grid-column: 1 / -1;
+}
+
+.ruta-item {
+    background-color: #ffffff;
+    border: 1px solid var(--gris-asfalto);
+    border-radius: 8px;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+}
+
+.ruta-item img {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+}
+
+.ruta-item h3,
+.ruta-item .ruta-nivel {
+    padding: var(--espacio1) var(--espacio2);
+}
+
+.ruta-nivel {
+    font-weight: 600;
+    color: var(--verde-ruta);
+}
+
+/* ============================================
+    13. RESERVAS (layout)
+   ============================================ */
+
+#main-reservas {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    gap: var(--espacio3);
+    align-items: start;
 }
