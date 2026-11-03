@@ -393,3 +393,21 @@ Cuando se activa .portada-top en row, el título "Rueda Libre - Tarifas" y los 3
 
 Entonces agregué flex-wrap: wrap y gap: var(--espacio2) en .portada-top dentro de la media query de 768px, para que si no caben, el menú baje 
 a la siguiente línea con separación.
+
+
+
+============================
+Implementación de Bootstrasp
+============================
+
+|          | CSS propio | Bootstrap                 |
+|----------|------------|---------------------------|
+| Tiempo   | ~30 min    | ~15 min                   |
+| CSS      | ~28 líneas | 0 líneas (todo en clases) |
+
+Bootstrap me dio sin esfuerzo: grilla responsive con breakpoints, componente .card listo, alineación (mt-auto, d-flex), 
+reset y tipografía base.
+
+Control que perdí:
+Breakpoints fijos de Bootstrap (no puedo usar 768/1200 exactos).
+No aplica mi paleta de marca sin sobrescribir.
