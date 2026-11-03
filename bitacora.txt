@@ -277,3 +277,25 @@ Se midio el ancho total de una tarjeta antes y después de cambiar box-sizing.
 Conclusiones:
 Con box-sizing activo: 960px
 Sin box-sizing activo: 893.016px
+
+
+
+Resumen:
+
+Día 1: 
+1. Creé el repositorio, la estructura de carpetas y la página base.
+2. Organicé el texto del cliente con HTML (títulos, listas, imágenes, enlaces).
+3. Hice la página de tarifas con tablas y un <aside> de info.
+4. Menú igual en las 3 páginas + página de reservas básica.
+
+Dia 2: 
+1. Utilice HTML semantico para organizar el código: <header>, <nav>, <main>, <aside>, <footer>.
+2. Formulario de reservas con todos los campos.
+3. Validación nativa (obligatorios, patrones, rangos).
+4. Auditoría de accesibilidad + publicación + mapa de colores.
+
+Día 3:
+1. Agregue archivo CSS con variables de color, fuentes de Google y estilo base.
+2. Menú activo, hover y foco visibles.
+3. Espaciado, max-width en texto, organización en tablas y formulario.
+4. Etiqueta "Nuevo", botón WhatsApp fijo, revisión final de calidad.

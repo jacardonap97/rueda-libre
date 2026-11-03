@@ -1,8 +1,12 @@
+/* ============================================
+    1. RESET Y BASE
+   ============================================ */
+
 *,
 *::before,
 *::after {
     box-sizing: border-box;
-}   
+}
 
 :root{
     --verde-ruta: #1E7A4F;
@@ -22,6 +26,7 @@ body{
     font-weight: 450;
     background-color: var(--crema);
     color: var(--azul-noche);
+    padding-bottom: 80px;
 }
 
 main {
@@ -30,10 +35,18 @@ main {
     margin-right: auto;
 }
 
+/* ============================================
+    2. TIPOGRAFÍA
+   ============================================ */
+
 h1, h2, h3, h4{
     font-family: var(--fuente-montserrat);
     font-weight: 700;
 }
+
+/* ============================================
+    3. HEADER/PORTADA
+   ============================================ */
 
 .portada {
     min-height: 100vh;
@@ -52,18 +65,10 @@ h1, h2, h3, h4{
     font-size: 3rem;
 }
 
-.servicio {
-    padding: var(--espacio3);
-    border: 1px solid var(--gris-asfalto);
-    border-radius: 8px;
-    margin-bottom: var(--espacio2);
-    background-color: #ffffff;
-}
+/* ============================================
+    4. NAVEGACIÓN
+   ============================================ */
 
-.servicio img {
-    width: 100%;
-    border-radius: 6px;
-}
 
 #menu {
     display: flex;
@@ -95,6 +100,43 @@ h1, h2, h3, h4{
     font-weight: 600; 
 }
 
+/* ============================================
+    5. TARJETAS Y SERVICIOS
+   ============================================ */
+
+
+.servicio {
+    padding: var(--espacio3);
+    border: 1px solid var(--gris-asfalto);
+    border-radius: 8px;
+    margin-bottom: var(--espacio2);
+    background-color: #ffffff;
+    position: relative;
+}
+
+.servicio img {
+    width: 100%;
+    border-radius: 6px;
+}
+
+.nuevo {
+    position: absolute;
+    top: var(--espacio1);
+    right: var(--espacio1);
+    background-color: var(--naranja-pedal);
+    color: var(--crema);
+    font-family: var(--fuente-montserrat);
+    font-size: 0.75rem;
+    font-weight: 700;
+    padding: 4px 10px;
+    border-radius: 12px;
+    z-index: 1;
+}
+
+/* ============================================
+    6. BOTONES
+   ============================================ */
+
 .btn-reserva {
     margin-top: 8px;
     display: inline-block;
@@ -121,6 +163,41 @@ h1, h2, h3, h4{
     transform: scale(0.97);
     background-color: #0f4a2f;
 }
+
+/* ============================================
+    7. BOTÓN FLOTANTE WHATSAPP
+   ============================================ */
+
+.btn-whatsapp {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    background-color: #25d366;
+    color: #ffffff;
+    font-family: var(--fuente-montserrat);
+    font-weight: 700;
+    font-size: var(--espacio2);
+    padding: 12px 20px;
+    border-radius: 50px;
+    text-decoration: none;
+    box-shadow: 0 4px 12px #000025;
+    z-index: 9999;
+    transform: transform 0.2s, box-shadow 0.2s;
+}
+
+.btn-whatsapp:hover {
+    transform: scale(1.05);
+    box-shadow: 0 6px 16px #000003; 
+}
+
+.btn-whatsapp:focus-visible {
+    outline: 3px solid var(--verde-ruta);
+    outline-offset: 3px;
+}
+
+/* ============================================
+    8. FORMULARIO
+   ============================================ */
 
 #formulario-reserva input:focus {
     outline: none;
@@ -204,6 +281,10 @@ h1, h2, h3, h4{
     outline: 2px solid var(--verde-ruta);
     outline-offset: 2px;
 }
+
+/* ============================================
+    9. TABLAS
+   ============================================ */
 
 #tarifas table {
     width: 100%;
