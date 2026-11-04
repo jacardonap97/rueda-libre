@@ -34,10 +34,12 @@ body{
     padding-bottom: 90px;
 }
 
+
 main {
     max-width: 60rem;
     margin-left: auto;
     margin-right: auto;
+    padding: 0 var(--espacio2);
 }
 
 /* ============================================
@@ -63,23 +65,7 @@ h1, h2, h3, h4{
     padding: var(--espacio2);
 }
 
-.portada-inicio {
-    min-height: 100vh;
-    display: grid;
-    grid-template-columns: 1fr;
-    align-items: center;
-    gap: var(--espacio3);
-    padding: var(--espacio2);
-    max-width: 60rem;
-    margin: 0 auto;
-}
-
-.portada-texto {
-    display: flex;
-    flex-direction: column;
-    gap: var(--espacio2);
-}
-
+/* Encabezado de las páginas internas(tarifas y reserva) */
 .portada-top {
     display: flex;
     flex-direction: column;
@@ -99,10 +85,6 @@ h1, h2, h3, h4{
     font-size: 2rem;
 }
 
-.portada-inicio h1 {
-    font-size: 2rem;
-}
-
 .portada-foto {
     width: 100%;
     height: auto;
@@ -112,15 +94,13 @@ h1, h2, h3, h4{
 /* ============================================
     4. NAVEGACIÓN
    ============================================ */
-
-
 #menu {
     display: flex;
     flex-direction: column;
     align-items: center;
     flex-wrap: wrap;
     gap: var(--espacio2);
-}
+} 
 
 #menu a { 
     color: var(--gris-asfalto);
@@ -329,6 +309,7 @@ h1, h2, h3, h4{
     outline-offset: 2px;
 }
 
+/* Para la doble columna del formulario*/
 .fila-dos {
     display: flex;
     flex-direction: column;
@@ -411,30 +392,9 @@ h1, h2, h3, h4{
     11. FLOTA   
    ============================================ */
 
-#flota {
-    display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
-    gap: var(--espacio3);
-    margin-top: var(--espacio3);
-}
-
-#flota h2 {
-    grid-column: 1 / -1;
-}
-
 .flota-item {
     background-color: #ffffff;
-    border: 1px solid var(--gris-asfalto);
-    border-radius: 8px;
-    padding: var(--espacio2);
-    display: flex;
-    flex-direction: column;
-    gap: var(--espacio1);
-}
-
-.flota-item img {
-    width: 100%;
-    border-radius: 6px;
+    border-color: var(--gris-asfalto);
 }
 
 .flota-precio {
@@ -451,35 +411,9 @@ h1, h2, h3, h4{
     12. RUTAS
    ============================================ */
 
-#rutas {
-    display: grid;
-    grid-template-columns: 1fr;
-    gap: var(--espacio3);
-    margin-top: var(--espacio3);
-}
-
-#rutas h2 {
-    grid-column: 1 / -1;
-}
-
 .ruta-item {
-    background-color: #ffffff;
-    border: 1px solid var(--gris-asfalto);
-    border-radius: 8px;
+    border-color: var(--gris-asfalto);
     overflow: hidden;
-    display: flex;
-    flex-direction: column;
-}
-
-.ruta-item img {
-    width: 100%;
-    height: auto;
-    object-fit: cover;
-}
-
-.ruta-item h3,
-.ruta-item .ruta-nivel {
-    padding: var(--espacio1) var(--espacio2);
 }
 
 .ruta-nivel {
@@ -504,21 +438,16 @@ h1, h2, h3, h4{
    ============================================ */
 @media (min-width: 768px) {
 
+    #menu {
+    flex-direction: row;
+    }
+
     /* Encabezado: nombre a la izquierda, menú a la derecha */
     .portada-top {
         flex-direction: row;
         justify-content: space-between;
         flex-wrap: wrap;
         gap: var(--espacio2);
-    }
-
-    #menu {
-        flex-direction: row;
-    }
-
-    /* Galería de rutas: 2 columnas */
-    #rutas {
-        grid-template-columns: repeat(2, 1fr);
     }
 
     /* Reservas: documento y celular en fila */
@@ -563,17 +492,8 @@ h1, h2, h3, h4{
     15. ESCRITORIO (≥1200px)
    ============================================ */
 @media (min-width: 1200px) {
-    /* Portada: 2 columnas (texto + foto) */
-    .portada-inicio {
-        grid-template-columns: 1fr 1fr;
-    }
-
-    .portada-inicio h1 {
+    header h1 {
         font-size: 3rem;
-    }
-
-    #rutas {
-        grid-template-columns: repeat(3, 1fr);
     }
 
     #main-reservas {

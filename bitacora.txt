@@ -426,3 +426,30 @@ Cinco clases de Bootstrap consultadas
 4. d-flex: activa el sistema Flexbox para organizar elementos.
 
 5. flex-md-row: organiza los elementos en fila desde pantallas medianas (md).
+
+
+
+===============================
+Conflictos al incluir Bootstrap
+==============================
+
+1. Color de los enlaces del menú
+Conflicto: Bootstrap establece un color predeterminado para los enlaces, mientras que el 
+CSS propio define un color personalizado mediante el selector #menu a.
+
+Solución: Se conserva el color personalizado de la página, ya que tiene mayor especificidad
+y corresponde a la identidad visual del proyecto.
+
+2. Tipografía de los encabezados
+Conflicto: Bootstrap proporciona estilos predeterminados para los encabezados, pero el 
+CSS propio establece la fuente Montserrat y un peso de 700 para los títulos.
+
+Solución: Se mantuvo la tipografía personalizada para conservar la identidad visual de 
+Rueda Libre y se verificó su presentación en diferentes tamaños de pantalla.
+
+3. Tamaño del título principal
+Conflicto: La regla header h1 establece un tamaño de fuente de 3 rem para pantallas de 1200 
+píxeles o más, modificando el tamaño predeterminado de Bootstrap.
+
+Solución: Se conservó esta personalización para escritorio y se revisó que el título mantuviera 
+una proporción adecuada en pantallas pequeñas.
