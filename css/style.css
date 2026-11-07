@@ -309,13 +309,6 @@ h1, h2, h3, h4{
     outline-offset: 2px;
 }
 
-/* Para la doble columna del formulario*/
-.fila-dos {
-    display: flex;
-    flex-direction: column;
-    gap: 0;
-}
-
 
 /* ============================================
     9. TABLAS
@@ -421,20 +414,9 @@ h1, h2, h3, h4{
     color: var(--verde-ruta);
 }
 
-/* ============================================
-    13. RESERVAS (layout)
-   ============================================ */
-
-#main-reservas {
-    display: grid;
-    grid-template-columns: 1fr;
-    gap: var(--espacio3);
-    align-items: start;
-}
-
 
 /* ============================================
-    14. TABLET (≥768px)
+    13. TABLET (≥768px)
    ============================================ */
 @media (min-width: 768px) {
 
@@ -448,17 +430,6 @@ h1, h2, h3, h4{
         justify-content: space-between;
         flex-wrap: wrap;
         gap: var(--espacio2);
-    }
-
-    /* Reservas: documento y celular en fila */
-    .fila-dos {
-        flex-direction: row;
-        gap: var(--espacio2);
-    }
-
-    .fila-dos p {
-        flex: 1; /* Indica que ocupe la mitad del ancho disponible */
-        margin-bottom: 0;
     }
 
     /* Pie: 3 bloques en fila */
@@ -489,14 +460,10 @@ h1, h2, h3, h4{
 }
 
 /* ============================================
-    15. ESCRITORIO (≥1200px)
+    14. ESCRITORIO (≥1200px)
    ============================================ */
 @media (min-width: 1200px) {
     header h1 {
         font-size: 3rem;
-    }
-
-    #main-reservas {
-        grid-template-columns: 2fr 1fr;
     }
 }   

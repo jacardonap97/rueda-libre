@@ -453,3 +453,31 @@ píxeles o más, modificando el tamaño predeterminado de Bootstrap.
 
 Solución: Se conservó esta personalización para escritorio y se revisó que el título mantuviera 
 una proporción adecuada en pantallas pequeñas.
+
+
+
+
+===========================================
+Comparativa de CSS: versión 1.5 vs. actual
+===========================================
+
+1. Líneas de CSS:
+   - Versión 1.5: 580.
+   - Versión actual: 469.
+
+2. Tiempo invertido:
+   - Versión 1.5: 1.30 horas.
+   - Versión actual: 40 minutos.
+
+3. Ventajas de la versión 1.5:
+   - Mayor control sobre la distribución mediante CSS propio.
+   - Permite personalizar completamente el diseño.
+
+4. Ventajas de la versión actual:
+   - Bootstrap simplifica la distribución y adaptación responsive.
+   - Se reduce la cantidad de reglas CSS necesarias para organizar los elementos.
+   - Se conserva la identidad visual mediante estilos personalizados.
+
+5. Desventajas:
+   - Versión 1.5: requiere más trabajo para implementar la responsividad.
+   - Versión actual: se puede generar conflictos entre Bootstrap y los estilos propios.
