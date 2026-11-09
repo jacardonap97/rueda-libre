@@ -92,43 +92,50 @@ h1, h2, h3, h4{
 }
 
 /* ============================================
-    4. NAVEGACIÓN
+    5. NAVEGACIÓN BOOTSTRAP
    ============================================ */
-#menu {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    flex-wrap: wrap;
-    gap: var(--espacio2);
-} 
+   
+.navbar-rueda {
+    background-color: var(--azul-noche);
+}
 
-#menu a { 
-    color: var(--gris-asfalto);
-    text-decoration: none;
+.navbar-rueda .navbar-brand {
+    color: var(--crema);
+    font-family: var(--fuente-montserrat);
+    font-weight: 700;
+}
+
+.navbar-rueda .navbar-brand:hover {
+    color: var(--naranja-pedal);
+}
+
+.navbar-rueda .nav-link {
+    color: var(--crema);
     padding: var(--espacio1) var(--espacio2);
     border-radius: 4px;
     transition: color 0.2s, background-color 0.2s;
 }
 
-#menu a:hover{
-    color: var(--verde-ruta);
-    background-color: #1E7A4F10;
+.navbar-rueda .nav-link:hover {
+    color: var(--naranja-pedal);
+    background-color: #ffffff10;
 }
 
-#menu a:focus{
-    color: var(--verde-ruta);
-    background-color: #1E7A4F10;
-    outline: 2px solid var(--verde-ruta);
-    outline-offset: 2px;
+.navbar-rueda .nav-link.active {
+    color: var(--naranja-pedal);
+    font-weight: 700;
 }
 
-#menu a.activo {
-    color: var(--verde-ruta); 
-    font-weight: 600; 
+.navbar-rueda .navbar-toggler {
+    border-color: var(--crema);
+}
+
+.navbar-rueda .navbar-toggler:focus {
+    box-shadow: 0 0 0 3px #F39A2B60;
 }
 
 /* ============================================
-    5. TARJETAS Y SERVICIOS
+    6. TARJETAS Y SERVICIOS
    ============================================ */
 
 
@@ -161,38 +168,25 @@ h1, h2, h3, h4{
 }
 
 /* ============================================
-    6. BOTONES
+    7. BOTONES
    ============================================ */
 
-.btn-reserva {
-    margin-top: 8px;
-    display: inline-block;
-    background-color: var(--verde-ruta);
-    color: var(--crema);
-    padding: var(--espacio1) var(--espacio2);
-    border-radius: 6px;
-    text-decoration: none;
-    font-weight: 600;
-    transition: background-color 0.2s, transform 0.1s;
+.btn-success {
+    --bs-btn-bg: var(--verde-ruta);
+    --bs-btn-border-color: var(--verde-ruta);
+    --bs-btn-hover-bg: #17613f;
+    --bs-btn-hover-border-color: #17613f;
 }
 
-.btn-reserva:hover {
-    background-color: #155d3b;
-}
-
-.btn-reserva:focus {
-    outline: 2px solid var(--verde-ruta);
-    outline-offset: 2px;
-    background-color: #155d3b;
-}
-
-.btn-reserva:active {
-    transform: scale(0.97);
-    background-color: #0f4a2f;
+.btn-outline-success {
+    --bs-btn-color: var(--verde-ruta);
+    --bs-btn-border-color: var(--verde-ruta);
+    --bs-btn-hover-bg: var(--verde-ruta);
+    --bs-btn-hover-border-color: var(--verde-ruta);
 }
 
 /* ============================================
-    7. BOTÓN FLOTANTE WHATSAPP
+    8. BOTÓN FLOTANTE WHATSAPP
    ============================================ */
 
 .btn-whatsapp {
@@ -223,7 +217,7 @@ h1, h2, h3, h4{
 }
 
 /* ============================================
-    8. FORMULARIO
+    9. FORMULARIO
    ============================================ */
 
 #formulario-reserva input:focus {
@@ -287,31 +281,9 @@ h1, h2, h3, h4{
     margin-right: var(--espacio2);
 }
 
-#formulario-reserva button {
-    padding: var(--espacio2) var(--espacio3);
-    background-color: var(--verde-ruta);
-    color: var(--crema);
-    border: none;
-    border-radius: 6px;
-    font-family: var(--fuente-montserrat);
-    font-weight: 700;
-    font-size: var(--espacio2);
-    cursor: pointer;
-    transition: background-color 0.2s;
-}
-
-#formulario-reserva button:hover {
-    background-color: #155d3b;
-}
-
-#formulario-reserva button:focus {
-    outline: 2px solid var(--verde-ruta);
-    outline-offset: 2px;
-}
-
 
 /* ============================================
-    9. TABLAS
+    10. TABLAS
    ============================================ */
 
 #tarifas table {
@@ -369,7 +341,7 @@ h1, h2, h3, h4{
 }
 
 /* ============================================
-    10. PIE DE PÁGINA
+    11. PIE DE PÁGINA
    ============================================ */
 
 #pie-de-pagina {
@@ -382,7 +354,7 @@ h1, h2, h3, h4{
 }
 
 /* ============================================
-    11. FLOTA   
+    12. FLOTA   
    ============================================ */
 
 .flota-item {
@@ -401,7 +373,7 @@ h1, h2, h3, h4{
 }
 
 /* ============================================
-    12. RUTAS
+    13. RUTAS
    ============================================ */
 
 .ruta-item {
@@ -416,13 +388,9 @@ h1, h2, h3, h4{
 
 
 /* ============================================
-    13. TABLET (≥768px)
+    14. TABLET (≥768px)
    ============================================ */
 @media (min-width: 768px) {
-
-    #menu {
-    flex-direction: row;
-    }
 
     /* Encabezado: nombre a la izquierda, menú a la derecha */
     .portada-top {
@@ -460,7 +428,7 @@ h1, h2, h3, h4{
 }
 
 /* ============================================
-    14. ESCRITORIO (≥1200px)
+    15. ESCRITORIO (≥1200px)
    ============================================ */
 @media (min-width: 1200px) {
     header h1 {
