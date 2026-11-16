@@ -52,7 +52,7 @@ h1, h2, h3, h4{
 }
 
 /* ============================================
-    3. HEADER / PORTADA
+    3. HEADER / PORTADA / CARRUSEL
    ============================================ */
 
 .portada {
@@ -91,6 +91,45 @@ h1, h2, h3, h4{
     border-radius: 8px;
 }
 
+#carruselPromociones .carousel-item img {
+    width: 85%;
+    margin: 0 auto;
+    height: auto;
+}
+
+#carruselPromociones .carousel-control-prev {
+    height: 240px;
+    width: 5%;
+    opacity: 1;
+}
+
+#carruselPromociones .carousel-control-next {
+    height: 240px;
+    width: 5%;
+    opacity: 1;
+}
+
+#carruselPromociones .carousel-control-prev-icon{
+    background-color: var(--verde-ruta);
+    border-radius: 50px;
+    width: 45px;
+    height: 45px;
+    background-size: 50%;
+}
+
+#carruselPromociones .carousel-control-next-icon {
+    background-color: var(--verde-ruta);
+    border-radius: 50px;
+    width: 45px;
+    height: 45px;
+    background-size: 50%;
+}
+
+#carruselPromociones button:focus-visible {
+    outline: 3px solid var(--naranja-pedal);
+    outline-offset: 4px;
+}
+
 /* ============================================
     5. NAVEGACIÓN BOOTSTRAP
    ============================================ */
@@ -126,8 +165,19 @@ h1, h2, h3, h4{
     font-weight: 700;
 }
 
+.navbar-rueda .nav-link:focus-visible {
+    outline: 3px solid var(--naranja-pedal);
+    outline-offset: 4px;
+    border-radius: 4px;
+}
+
 .navbar-rueda .navbar-toggler {
     border-color: var(--crema);
+}
+
+.navbar-rueda .navbar-toggler-icon {
+    background-image: var(--bs-navbar-toggler-icon-bg);
+    filter: brightness(0) saturate(100%) invert(96%) sepia(13%) saturate(350%) hue-rotate(330deg) brightness(103%);
 }
 
 .navbar-rueda .navbar-toggler:focus {
@@ -357,28 +407,20 @@ h1, h2, h3, h4{
     12. FLOTA   
    ============================================ */
 
-.flota-item {
-    background-color: #ffffff;
-    border-color: var(--gris-asfalto);
-}
 
 .flota-precio {
     font-weight: 700;
     color: var(--verde-ruta);
 }
 
-.flota-item .btn-reserva {
-    margin-top: auto;
-    text-align: center;
-}
 
 /* ============================================
     13. RUTAS
    ============================================ */
 
-.ruta-item {
-    border-color: var(--gris-asfalto);
-    overflow: hidden;
+#rutas .card-img-top {
+    height: 220px;
+    object-fit: cover;
 }
 
 .ruta-nivel {
