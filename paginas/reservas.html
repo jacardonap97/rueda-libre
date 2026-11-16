@@ -19,6 +19,8 @@
 
         <!-- Bootstrap -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css">
+    <!-- Iconos -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.2/font/bootstrap-icons.min.css">
 
     <!-- CSS -->
     <link rel="stylesheet" href="../css/style.css">
@@ -42,13 +44,13 @@
                 <div class="collapse navbar-collapse" id="menuRuedaLibre">
                     <ul class="navbar-nav ms-auto">
                         <li class="nav-item">
-                            <a class="nav-link" href="../index.html">Inicio</a>
+                            <a class="nav-link" href="../index.html"><i class="bi bi-house-door me-1" aria-hidden="true"></i>Inicio</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="tarifas.html">Tarifas y rutas</a>
+                            <a class="nav-link" href="tarifas.html"><i class="bi bi-bicycle me-1" aria-hidden="true"></i>Tarifas y rutas</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link active" aria-current="page" href="reservas.html">Reservas</a>
+                            <a class="nav-link active" aria-current="page" href="reservas.html"><i class="bi bi-calendar-check me-1" aria-hidden="true"></i>Reservas</a>
                         </li>
                     </ul>
                 </div>
@@ -60,7 +62,7 @@
     <main class="container py-4">
 
         <h1 class="fw-bold mb-4">Reserva tu bicicleta</h1>
-        <img src="../img/logo-verde-ruta.png" alt="Logo página">
+        <img src="../img/logo-verde-ruta.png" class="mb-5" alt="Logo página">
 
         <div class="row g-4 align-items-start">
             <div class="col-12 col-md-8">
@@ -249,7 +251,7 @@
                                 <div class="d-flex flex-wrap gap-2 mt-3">
                                     <button type="button" class="btn btn-outline-success mt-3" data-bs-toggle="modal" data-bs-target="#modalPoliticas">Consultar políticas de alquiler</button>
     
-                                    <button type="submit" class="btn btn-success btn-lg">Enviar formulario</button>
+                                    <button type="submit" class="btn btn-primary btn-lg">Enviar formulario</button>
                                 </div>
                             </div>
                         </fieldset>
@@ -301,11 +303,11 @@
                         Correo: <a href="mailto:correo@ruedalibre.example">correo@ruedalibre.example</a>
                     </p>
         
+                    <h3>Horarios</h3>
                     <dl>
-                        <h3>Horarios</h3>
                         <dt><strong>Lunes a viernes:</strong></dt>
                         <dd>7:00 a. m. – 7:00 p. m.</dd>
-                        <br>
+
                         <dt><strong>Sábados, domingos y festivos:</strong></dt>
                         <dd>6:00 a. m. – 2:00 p. m.</dd>
                     </dl>
@@ -321,18 +323,30 @@
         </div>
 
         <div class="pie-contacto">
-            <p>Correo electrónico: <a href="mailto:correo@ruedalibre.example">correo@ruedalibre.example</a></p>
-            <p>Contacto: <a href="https://wa.me/573000000000" target="_blank" rel="noopener">+ 57 3000000000</a></p>
+            <p>
+                <i class="bi bi-envelope" aria-hidden="true"></i>
+                Correo electrónico: <a href="mailto:correo@ruedalibre.example">correo@ruedalibre.example</a>
+            </p>
+            <p>
+                <i class="bi bi-telephone" aria-hidden="true"></i>
+                Contacto: <a href="https://wa.me/573000000000" target="_blank" rel="noopener">+ 57 3000000000</a>
+            </p>
         </div>
 
         <div class="pie-horarios">
-            <p><strong>Horario:</strong></p>
+            <p>
+                <i class="bi bi-clock" aria-hidden="true"></i>
+                <strong>Horario:</strong>
+            </p>
             <p>Lun – Vie: 7:00 a. m. – 7:00 p. m.</p>
             <p>Sáb – Dom - Festivos: 6:00 a. m. – 2:00 p. m.</p>
         </div>
     </footer>
 
-    <a href="https://wa.me/573000000000" class="btn-whatsapp" target="_blank" rel="noopener">WhatsApp</a>
+    <a href="https://wa.me/573000000000" class="btn-whatsapp" target="_blank" rel="noopener" aria-label="Contactar con Rueda Libre por WhatsApp">
+        <i class="bi bi-whatsapp" aria-hidden="true"></i>
+        WhatsApp
+    </a>
 
 
 

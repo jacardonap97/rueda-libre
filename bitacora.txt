@@ -481,3 +481,25 @@ Comparativa de CSS: versión 1.5 vs. actual
 5. Desventajas:
    - Versión 1.5: requiere más trabajo para implementar la responsividad.
    - Versión actual: se puede generar conflictos entre Bootstrap y los estilos propios.
+
+
+
+====================================
+Implementación de Bootstrap - Versión 2.0
+====================================
+
+1. Personalicé las variables de Bootstrap con los colores y tipografías de Rueda Libre.
+2. Configuré los botones y creé clases propias para complementar el framework.
+3. Incorporé Bootstrap Icons en la navegación, beneficios y datos de contacto.
+4. Adapté las páginas utilizando la grilla responsive de Bootstrap.
+5. Revisé la accesibilidad, los estilos y los conflictos entre Bootstrap y el CSS propio.
+
+
+* Revisé las páginas en celular (375 px), tablet (768 px) y escritorio (1366 px).
+* Comprobé la navegación mediante teclado y la visibilidad del foco.
+* Revisé el contraste y la legibilidad de los colores de marca.
+
+Conclusión:
+
+Bootstrap facilitó la distribución responsive y redujo la cantidad de CSS necesario. Fue necesario personalizar sus variables 
+y complementar sus clases para conservar la identidad visual de Rueda Libre.
