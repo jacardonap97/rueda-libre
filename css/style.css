@@ -282,7 +282,7 @@ h1, h2, h3, h4{
     box-shadow: 0 0 0 3px #1E7A4F30;
 }
 
-#formulario-reserva input,
+#formulario-reserva input:not([type="radio"]):not([type="checkbox"]),
 #formulario-reserva select {
     width: 100%;
     padding: var(--espacio1) var(--espacio2);
@@ -306,7 +306,7 @@ h1, h2, h3, h4{
     padding: 0 var(--espacio1);
 }
 
-#formulario-reserva label {
+#formulario-reserva label:not(.form-check-label) {
     display: block;
     margin-bottom: var(--espacio1);
     font-size: 1.2rem;
@@ -322,13 +322,18 @@ h1, h2, h3, h4{
 /* De esta forma se cambia el color de los botones de radio */
 #formulario-reserva input[type="radio"] {
     accent-color: var(--verde-ruta);
-    width: auto;
+    padding: 0;
+    margin-bottom: 0;
 }   
 
 #formulario-reserva label:has(input[type="radio"]) {
     display: inline;
     margin-bottom: 0;
     margin-right: var(--espacio2);
+}
+
+#formulario-reserva form.was-validated .grupo-radio:has(input:invalid) .invalid-feedback {
+    display: block;
 }
 
 
