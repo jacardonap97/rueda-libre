@@ -523,3 +523,15 @@ Cada clase cumple una función específica: definir el color de fondo, el espaci
 *Diferencia identificada
 
 Bootstrap ofrece componentes y estilos predefinidos que se aplican mediante clases. Tailwind utiliza un enfoque *utility-first*, en el que se combinan clases pequeñas directamente en el HTML para construir el diseño de cada elemento.
+
+
+
+=========================================
+Generación de clases CSS con Tailwind CLI
+=========================================
+
+Al revisar el archivo `output.css`, busqué la clase ".bg-orange-500", que estoy utilizando en mi página, y encontré su regla CSS generada.
+
+Después busqué por ejemplo ".bg-pink-500", pero no encontré resultados porque no estoy utilizando esa clase en mis archivos HTML.
+
+Esto ocurre porque Tailwind analiza los archivos del proyecto y genera los estilos de las clases que encuentra utilizadas. De esta manera, evita incluir CSS innecesario y reduce el tamaño del archivo final.
