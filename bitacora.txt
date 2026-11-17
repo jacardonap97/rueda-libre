@@ -503,3 +503,23 @@ Conclusión:
 
 Bootstrap facilitó la distribución responsive y redujo la cantidad de CSS necesario. Fue necesario personalizar sus variables 
 y complementar sus clases para conservar la identidad visual de Rueda Libre.
+
+
+
+
+
+============================
+Rueda Nocturna con Tailwind
+============================
+
+Construcción del botón: Bootstrap vs. Tailwind CSS
+
+En la actividad anterior, utilizando Bootstrap, construí botones a partir de clases predefinidas, que permiten aplicar estilos de manera rápida.
+
+En esta actividad utilicé Tailwind para construir el enlace «Inscríbete» combinando directamente varias clases:
+
+Cada clase cumple una función específica: definir el color de fondo, el espacio interno, los bordes redondeados, el cambio de color al pasar el cursor.
+
+*Diferencia identificada
+
+Bootstrap ofrece componentes y estilos predefinidos que se aplican mediante clases. Tailwind utiliza un enfoque *utility-first*, en el que se combinan clases pequeñas directamente en el HTML para construir el diseño de cada elemento.
