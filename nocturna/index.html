@@ -1,73 +1,216 @@
-
-<!DOCTYPE html>
+<!doctype html>
 <html lang="es">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Rueda Nocturna</title>
 
     <!-- CSS Tailwind -->
-    <link href="./src/output.css" rel="stylesheet">
-</head>
+    <link href="./src/output.css" rel="stylesheet" />
+  </head>
 
-<body class="bg-slate-950 text-white">
-
+  <body class="bg-slate-950 text-white">
     <main class="p-6">
+      <section>
+        <p class="bg-orange-500 text-black p-2 rounded-lg inline-block">
+          Nuevo · Jueves a sábado
+        </p>
 
-        <section>
-            <p class="bg-orange-500 text-black p-2 rounded-lg inline-block">
-                Nuevo · Jueves a sábado
-            </p>
+        <h1 class="text-5xl font-bold mt-6">
+          Rueda <span class="text-orange-400">Nocturna</span>
+        </h1>
 
-            <h1 class="text-5xl font-bold mt-6">
-                Rueda <span class="text-orange-400">Nocturna</span>
-            </h1>
+        <p class="text-gray-300 text-lg mt-4">
+          Descubre Medellín en bici cuando se encienden las luces
+        </p>
 
-            <p class="text-gray-300 text-lg mt-4">
-                Descubre Medellín en bici cuando se encienden las luces
-            </p>
+        <div class="mt-8">
+          <p class="text-2xl font-bold">3 rutas</p>
+          <p class="text-2xl font-bold mt-2">Desde $55.000</p>
+        </div>
 
-            <div class="mt-8">
-                <p class="text-2xl font-bold">3 rutas</p>
-                <p class="text-2xl font-bold mt-2">Desde $55.000</p>
+        <a
+          href="#"
+          class="inline-block bg-orange-500 text-black p-4 rounded-lg mt-6"
+        >
+          Inscríbete
+        </a>
+      </section>
+
+      <!-- Botones Tailwind-->
+      <section class="mt-12">
+        <h2 class="text-2xl font-bold mb-6">Botones</h2>
+
+        <div class="flex flex-wrap gap-4">
+          <!-- Boton principal -->
+          <button
+            type="button"
+            class="bg-orange-500 text-black p-3 rounded-lg hover:bg-orange-400 focus-visible:ring-2 focus-visible:ring-orange-300 focus-visible:ring-offset-2 focus-visible:ring-offset-slate-950"
+          >
+            Botón principal
+          </button>
+
+          <!-- Boton secundario -->
+          <button
+            type="button"
+            class="bg-slate-700 text-white p-3 rounded-lg hover:bg-slate-600 focus-visible:ring-2 focus-visible:ring-orange-300 focus-visible:ring-offset-2 focus-visible:ring-offset-slate-950"
+          >
+            Botón secundario
+          </button>
+
+          <!-- Boton de contorno -->
+          <button
+            type="button"
+            class="border border-orange-500 text-orange-400 p-3 rounded-lg hover:bg-orange-500 hover:text-black focus-visible:ring-2 focus-visible:ring-orange-300 focus-visible:ring-offset-2 focus-visible:ring-offset-slate-950"
+          >
+            Botón de contorno
+          </button>
+        </div>
+      </section>
+
+      <!-- Rutas -->
+      <section class="mt-12">
+        <h2 class="text-2xl font-bold mb-6">Nuestras rutas nocturnas</h2>
+
+        <!-- Ruta 1: Luces del Centro -->
+        <div class="bg-slate-900 border border-slate-700 rounded-lg overflow-hidden shadow-md hover:shadow-xl transition-shadow">
+          <img src="../img/ruta-nocturna.png" alt="Recorrido nocturno por centro de Medellín" class="w-full h-250 object-cover"/>
+
+          <div class="p-5">
+            <span class="inline-block bg-green-500/20 text-green-400 text-sm font-semibold px-3 py-1 rounded-full">
+              Fácil
+            </span>
+
+            <h3 class="text-2xl font-bold mt-4">Luces del Centro</h3>
+
+            <ul class="mt-5 space-y-4 list-disc pl-5">
+
+                <li>
+                    <p class="text-sm text-slate-400">Distancia</p>
+                    <p class="text-lg font-semibold">10 km</p>
+                </li>
+
+                <li>
+                    <p class="text-sm text-slate-400">Duración</p>
+                    <p class="text-lg font-semibold">2 horas</p>
+                </li>
+
+                <li>
+                    <p class="text-sm text-slate-400">Punto de encuentro</p>
+                    <p class="text-lg font-semibold">Sede de Rueda Libre</p>
+                </li>
+
+            </ul>
+
+            <div class="mt-6">
+              <p class="text-sm text-slate-400">Precio por persona</p>
+              <p class="text-2xl font-bold text-orange-400">$55.000</p>
+
+              <a
+                href="#"
+                class="inline-block bg-orange-500 text-black p-3 rounded-lg hover:bg-orange-400 focus-visible:ring-2 focus-visible:ring-orange-300 focus-visible:ring-offset-2 focus-visible:ring-offset-slate-950 mt-4"
+              >
+                Inscribirme
+              </a>
             </div>
+          </div>
+        </div>
 
-            <a href="#" class="inline-block bg-orange-500 text-black p-4 rounded-lg mt-6">
-                Inscríbete
-            </a>
-        </section>
 
-        
-        <!-- Botones Tailwind-->
-        <section class="mt-12">
-            <h2 class="text-2xl font-bold mb-6">
-                Botones
-            </h2>
 
-            <div class="flex flex-wrap gap-4">
-                <!-- Boton principal -->
-                <button type="button"
-                    class="bg-orange-500 text-black p-3 rounded-lg hover:bg-orange-400 focus-visible:ring-2 focus-visible:ring-orange-300 focus-visible:ring-offset-2 focus-visible:ring-offset-slate-950">
-                    Botón principal
-                </button>
 
-                <!-- Boton secundario -->
-                <button type="button"
-                    class="bg-slate-700 text-white p-3 rounded-lg hover:bg-slate-600 focus-visible:ring-2 focus-visible:ring-orange-300 focus-visible:ring-offset-2 focus-visible:ring-offset-slate-950">
-                    Botón secundario
-                </button>
+        <!-- Ruta 2: Miradores de la Ciudad -->
+        <div class="bg-slate-900 mt-5 border border-slate-700 rounded-lg overflow-hidden shadow-md hover:shadow-xl transition-shadow">
+          <img src="../img/ruta-miradores.png" alt="Recorrido nocturno por miradores de Medellín" class="w-full h-250 object-cover"/>
 
-                <!-- Boton de contorno -->
-                <button type="button"
-                    class="border border-orange-500 text-orange-400 p-3 rounded-lg hover:bg-orange-500 hover:text-black focus-visible:ring-2 focus-visible:ring-orange-300 focus-visible:ring-offset-2 focus-visible:ring-offset-slate-950">
-                    Botón de contorno
-                </button>
+          <div class="p-5">
+            <span class="inline-block bg-yellow-500/20 text-yellow-400 text-sm font-semibold px-3 py-1 rounded-full">
+              Medio
+            </span>
+
+            <h3 class="text-2xl font-bold mt-4">Miradores de la Ciudad</h3>
+
+            <ul class="mt-5 space-y-4 list-disc pl-5">
+
+                <li>
+                    <p class="text-sm text-slate-400">Distancia</p>
+                    <p class="text-lg font-semibold">16 km</p>
+                </li>
+
+                <li>
+                    <p class="text-sm text-slate-400">Duración</p>
+                    <p class="text-lg font-semibold">3 horas</p>
+                </li>
+
+                <li>
+                    <p class="text-sm text-slate-400">Punto de encuentro</p>
+                    <p class="text-lg font-semibold">Sede de Rueda Libre</p>
+                </li>
+
+            </ul>
+
+            <div class="mt-6">
+              <p class="text-sm text-slate-400">Precio por persona</p>
+              <p class="text-2xl font-bold text-orange-400">$75.000</p>
+
+              <a
+                href="#"
+                class="inline-block bg-orange-500 text-black p-3 rounded-lg hover:bg-orange-400 focus-visible:ring-2 focus-visible:ring-orange-300 focus-visible:ring-offset-2 focus-visible:ring-offset-slate-950 mt-4"
+              >
+                Inscribirme
+              </a>
             </div>
+          </div>
+        </div>
 
-        </section>
 
 
+        <!-- Ruta 3: Luna en Las Palmas -->
+        <div class="bg-slate-900 mt-5 border border-slate-700 rounded-lg overflow-hidden shadow-md hover:shadow-xl transition-shadow">
+          <img src="../img/ruta-palmas.png" alt="Recorrido nocturno por Las Palmas" class="w-full h-250 object-cover"/>
+
+          <div class="p-5">
+            <span class="inline-block bg-red-500/20 text-red-400 text-sm font-semibold px-3 py-1 rounded-full">
+              Difícil
+            </span>
+
+            <h3 class="text-2xl font-bold mt-4">Miradores de la Ciudad</h3>
+
+            <ul class="mt-5 space-y-4 list-disc pl-5">
+
+                <li>
+                    <p class="text-sm text-slate-400">Distancia</p>
+                    <p class="text-lg font-semibold">22 km</p>
+                </li>
+
+                <li>
+                    <p class="text-sm text-slate-400">Duración</p>
+                    <p class="text-lg font-semibold">3,5 horas</p>
+                </li>
+
+                <li>
+                    <p class="text-sm text-slate-400">Punto de encuentro</p>
+                    <p class="text-lg font-semibold">Sede de Rueda Libre</p>
+                </li>
+
+            </ul>
+
+            <div class="mt-6">
+              <p class="text-sm text-slate-400">Precio por persona</p>
+              <p class="text-2xl font-bold text-orange-400">$95.000</p>
+
+              <a
+                href="#"
+                class="inline-block bg-orange-500 text-black p-3 rounded-lg hover:bg-orange-400 focus-visible:ring-2 focus-visible:ring-orange-300 focus-visible:ring-offset-2 focus-visible:ring-offset-slate-950 mt-4"
+              >
+                Inscribirme
+              </a>
+            </div>
+          </div>
+        </div>
+
+      </section>
+      
     </main>
-
-</body>
+  </body>
 </html>
